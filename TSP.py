@@ -21,9 +21,5 @@ def tsp(mark,pos):
             ans = min(new_ans,ans) 
     dp[mark][pos]=ans #memoize the result
     return ans
-    
-for i in range(1<<n):
-    for j in range(n):
-        dp[i][j]=-1
         
 print("Result: ",tsp(1,0)) #Initial state as starting city
